@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintCircleRadius="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/abuabu">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/bg_pilihmetode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryLight">
+
+            <TextView
+                android:id="@+id/txt_pilihmetode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PILIH METODE PEMBAYARAN"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/gb_pembayaran"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bg_pilihmetode"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/tab_background_selected"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txt_ttlpembayaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Total Pembayaran"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/totalpembayaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_ttlpembayaran"
+                android:layout_centerHorizontal="true"
+                android:text="Rp. 130.000"
+                android:textSize="35sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:id="@+id/bg_metodepembayaran"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/gb_pembayaran"
+            android:padding="1dp">
+
+            <RelativeLayout
+                android:id="@+id/bg_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <RelativeLayout
+                    android:id="@+id/rl_bni"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_bni"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/raund_signin"
+                        android:textColor="@color/white"
+                        android:text="BNI"
+                        android:textSize="20sp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_mandiri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/rl_bni"
+                    android:layout_toRightOf="@+id/rl_bni">
+
+                    <Button
+                        android:id="@+id/btn_mandiri"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/raund_title"
+                        android:text="MANDIRI"
+                        android:textSize="20sp"
+
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silahkan Transfer Ke"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/bg_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                />
+
+            <RelativeLayout
+                android:id="@+id/bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/tab_background_selected"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/text_transfer">
+
+            <ImageView
+                android:id="@+id/img_metode"
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:src="@drawable/bni" />
+
+            <TextView
+                android:id="@+id/txt_norekening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/img_metode"
+                android:layout_toRightOf="@id/img_metode"
+                android:text="Nomer Rekening"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:id="@+id/nomerRekening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:layout_below="@+id/txt_norekening"
+                android:layout_alignLeft="@+id/txt_norekening"
+                android:textColor="@color/colorPrimaryLight"
+                android:text="55002312456"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/atas_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nomerRekening"
+                android:layout_alignStart="@+id/nomerRekening"
+                android:layout_alignLeft="@+id/nomerRekening"
+                android:layout_marginBottom="20dp"
+                android:text="a/n Wader Jhonson"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_bayar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bg_metodepembayaran"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/raund_signin"
+            android:text="Bayar"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"/>
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

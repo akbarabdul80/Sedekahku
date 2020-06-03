@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/img_slide1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_height="200dp"
+        android:src="@drawable/donasi"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donasi berupa Makanan dan INFAQ"
+            android:textAlignment="center"
+            android:maxWidth="300dp"
+            android:layout_marginTop="20dp"
+            android:textSize="35sp"
+            android:autoSizeTextType="uniform"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donatur dapat melakukan donasi berupa makanan ataupun infaq"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

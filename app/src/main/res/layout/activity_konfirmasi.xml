@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sragen.sedekahku.DonasiMakanan">
+
+    <RelativeLayout
+        android:id="@+id/banner_biaya"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:padding="10dp"
+        android:background="@color/colorPrimaryLight"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Konfirmasi Pembayaran"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rv_makanan1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="250dp"-->
+<!--        android:clickable="false"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/banner_biaya" />-->
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/banner_biaya"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="30dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/banner_biaya">
+
+            <TextView
+                android:id="@+id/txt_np"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Nama Pemesan"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/usernamek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_np"
+                android:layout_marginLeft="15dp"
+                android:text="Username"
+                android:textColor="@color/text_color"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txt_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usernamek"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Pesanan"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/pesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_p"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:text="Nasi Box Besar Jumlah 1x, Nasi Box Kecil Jumlah 2x"
+                android:textColor="@color/text_color"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txt_bwp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pesanan"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="BATASAN WAKTU PEMBAYARAN"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_bwp"
+                android:layout_alignStart="@+id/txt_bwp"
+                android:layout_alignLeft="@+id/txt_bwp"
+                android:text="Selasa, 11 Feb 2020, 09:16"
+                android:textColor="@color/text_color"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="@id/txt_bwp"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/jt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time"
+                android:layout_alignStart="@+id/time"
+                android:layout_alignLeft="@+id/time"
+                android:layout_marginTop="10dp"
+                android:text="JUMLAH TAGIHAN" />
+
+            <TextView
+                android:id="@+id/jml_tagihan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jt"
+                android:layout_alignLeft="@id/jt"
+                android:text="Rp. 100.000"
+                android:textColor="@color/text_color"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txt_donasike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DONASI KE"
+                android:layout_below="@id/jml_tagihan"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@id/jml_tagihan"/>
+
+            <TextView
+                android:id="@+id/donasike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_donasike"
+                android:layout_alignLeft="@id/txt_donasike"
+                android:text="Masjid Agung Sragen"
+                android:textColor="@color/text_color"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:id="@+id/txt_nor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/donasike"
+                android:layout_alignLeft="@id/jml_tagihan"
+                android:layout_marginTop="10dp"
+                android:text="NOMOR REKENING" />
+
+            <ImageView
+                android:id="@+id/img_bank"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/txt_nor"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/mandiri" />
+
+            <TextView
+                android:id="@+id/no_rekening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_bank"
+                android:layout_alignLeft="@id/txt_nor"
+                android:text="12376497713"
+                android:textColor="@color/text_color"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/atas_namak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/no_rekening"
+                android:layout_marginLeft="15dp"
+                android:text="a/n Tayo.com"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/konfirmasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/raund_pilih"
+                android:padding="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="KIRIM BUKTI"
+                android:textColor="@color/white"
+                android:layout_below="@id/atas_namak" />
+
+            <ImageView
+                android:id="@+id/imgtemp"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="130dp"
+                android:layout_below="@id/konfirmasi"
+                tools:ignore="MissingConstraints" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/bukti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/raund_pilih"
+            android:text="Konfirmasi"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

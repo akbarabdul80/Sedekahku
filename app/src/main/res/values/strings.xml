@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SEDEKAHKU</string>
+    <string name="next">LANJUT</string>
+    <string name="skip">LEWATI</string>
+    <string name="start">MULAI</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="spagi">Selamat Pagi,</string>
+    <string name="ssiang">Selamat Siang,</string>
+    <string name="ssore">Selamat Sore,</string>
+    <string name="smalam">Selamat Malam,</string>
+</resources>

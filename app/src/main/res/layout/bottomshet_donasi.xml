@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintCircleRadius="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/abuabu">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/bg_total"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryLight">
+
+            <TextView
+                android:id="@+id/txt_pilihmetode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL PEMBAYARAN"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/bg_total"
+            android:id="@+id/bg_dll">
+
+
+            <RelativeLayout
+                android:id="@+id/bg_donasi"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/tab_background_selected"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txt_ttldonasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Total Donasi"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/total_donasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_ttldonasi"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:text="Rp. 125.000"
+                    android:textSize="25sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bgadmin"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/bg_donasi"
+                android:layout_toEndOf="@+id/bg_donasi"
+                android:layout_toRightOf="@+id/bg_donasi"
+                android:background="@drawable/tab_background_selected"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txt_ttladmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Biaya Admin"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_ttladmin"
+                    android:layout_centerHorizontal="true"
+                    android:text="Rp5.000"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/gb_pembayaran"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bg_dll"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/tab_background_selected"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txt_ttlpembayaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Total Pembayaran"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/totalpembayaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_ttlpembayaran"
+                android:layout_centerHorizontal="true"
+                android:text="Rp. 130.000"
+                android:textSize="35sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_bayar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/raund_signin"
+            android:text="Bayar"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/gb_pembayaran"/>
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
